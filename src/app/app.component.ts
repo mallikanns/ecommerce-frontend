@@ -13,6 +13,16 @@ export class AppComponent {
   // isCustomerLoggedIn: boolean = UserStorageService.isCustomerLoggedIn();
   // isAdminLoggedIn: boolean = UserStorageService.isAdminLoggedIn();
 
+  isAdmin: boolean = false;
+  isCustomer: boolean = false;
+
+  toggleAdmin() {
+    return this.isAdmin = !this.isAdmin;
+  }
+  toggleCustomer() {
+    return this.isCustomer = !this.isCustomer;
+  }
+
   constructor(private router: Router) {}
 
   // ngOnInit(): void {
@@ -26,4 +36,9 @@ export class AppComponent {
   //   UserStorageService.signOut();
   //   this.router.navigateByUrl('login');
   // }
+
+  newLogout() {
+    this.isAdmin = false;
+    this.isCustomer = false;
+  }
 }
