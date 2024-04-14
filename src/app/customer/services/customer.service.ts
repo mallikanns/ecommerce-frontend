@@ -49,6 +49,15 @@ export class CustomerService {
     // })
   }
 
+  applyCoupon(code: any): Observable<any> {
+    const userId = 4;
+    return this.http.get(BASIC_URL + `api/customer/coupon/${userId}/${code}`)
+    // const userId = UserStorageService.getUserId();
+    // return this.http.get(BASIC_URL + `api/customer/coupon/${userId}/${code}`, {
+    //   headers: this.createAuthorizationHeader(),
+    // })
+  }
+
   private createAuthorizationHeader(): HttpHeaders {
     return new HttpHeaders().set(
       'Authorization',
