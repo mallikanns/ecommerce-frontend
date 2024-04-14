@@ -10,6 +10,8 @@ import { DemoAngularMaterialModule } from '../DemoAngularMaterialModule';
 import { PostCategoryComponent } from './components/post-category/post-category.component';
 import { PostProductComponent } from './components/post-product/post-product.component';
 import { MatSelectModule } from '@angular/material/select';
+import { PostCouponComponent } from './components/post-coupon/post-coupon.component';
+import { CouponsComponent } from './components/coupons/coupons.component';
 // import { MatOptionModule } from '@angular/material/core';
 
 
@@ -18,7 +20,9 @@ import { MatSelectModule } from '@angular/material/select';
     AdminComponent,
     DashboardComponent,
     PostCategoryComponent,
-    PostProductComponent
+    PostProductComponent,
+    PostCouponComponent,
+    CouponsComponent
   ],
   imports: [
     CommonModule,
