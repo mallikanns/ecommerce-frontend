@@ -11,6 +11,7 @@ import { DemoAngularMaterialModule } from '../DemoAngularMaterialModule';
 import { MatSelectModule } from '@angular/material/select';
 import { CartComponent } from './components/cart/cart.component';
 import { PlaceOrderComponent } from './components/place-order/place-order.component';
+import { MyOrdersComponent } from './components/my-orders/my-orders.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { PlaceOrderComponent } from './components/place-order/place-order.compon
     CustomerComponent,
     DashboardComponent,
     CartComponent,
-    PlaceOrderComponent
+    PlaceOrderComponent,
+    MyOrdersComponent
   ],
   imports: [
     CommonModule,
