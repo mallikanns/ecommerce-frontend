@@ -12,6 +12,7 @@ import { PostProductComponent } from './components/post-product/post-product.com
 import { MatSelectModule } from '@angular/material/select';
 import { PostCouponComponent } from './components/post-coupon/post-coupon.component';
 import { CouponsComponent } from './components/coupons/coupons.component';
+import { OrdersComponent } from './components/orders/orders.component';
 // import { MatOptionModule } from '@angular/material/core';
 
 
@@ -22,7 +23,8 @@ import { CouponsComponent } from './components/coupons/coupons.component';
     PostCategoryComponent,
     PostProductComponent,
     PostCouponComponent,
-    CouponsComponent
+    CouponsComponent,
+    OrdersComponent
   ],
   imports: [
     CommonModule,
