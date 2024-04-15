@@ -10,13 +10,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { DemoAngularMaterialModule } from '../DemoAngularMaterialModule';
 import { MatSelectModule } from '@angular/material/select';
 import { CartComponent } from './components/cart/cart.component';
+import { PlaceOrderComponent } from './components/place-order/place-order.component';
 
 
 @NgModule({
   declarations: [
     CustomerComponent,
     DashboardComponent,
-    CartComponent
+    CartComponent,
+    PlaceOrderComponent
   ],
   imports: [
     CommonModule,
