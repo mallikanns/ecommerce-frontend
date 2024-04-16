@@ -127,6 +127,22 @@ export class CustomerService {
     // })
   }
 
+  addProductToWishlist(wishlistDto: any): Observable<any> {
+    return this.http.post(BASIC_URL + `api/customer/wishlist`, wishlistDto)
+    // return this.http.post(BASIC_URL + `api/customer/wishlist`, wishlistDto, {
+    //   headers: this.createAuthorizationHeader(),
+    // })
+  }
+
+  getWishlistByUserId(): Observable<any> {
+    const userId = 6;
+    return this.http.get(BASIC_URL + `api/customer/wishlist/${userId}`)
+    // const userId = UserStorageService.getUserId();
+    // return this.http.get(BASIC_URL + `api/customer/wishlist/${userId}`, {
+    //   headers: this.createAuthorizationHeader(),
+    // })
+  }
+
   private createAuthorizationHeader(): HttpHeaders {
     return new HttpHeaders().set(
       'Authorization',
