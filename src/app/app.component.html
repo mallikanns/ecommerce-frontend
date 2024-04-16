@@ -2,6 +2,7 @@
     <mat-toolbar color="primary" class="navbar">
         <span class="navbar-brand">E-Commerce</span>
         <span class="spacer"></span>
+        <button mat-button routerLink="/order" routerLinkActive="active">Track Order</button>
         <button mat-button (click)="toggleAdmin()" routerLink="/admin/dashboard" routerLinkActive="active">Admin</button>
         <button mat-button (click)="toggleCustomer()" routerLink="/customer/dashboard" routerLinkActive="active">Customer</button>
         <button mat-button  routerLink="/signup" routerLinkActive="active">Register</button>

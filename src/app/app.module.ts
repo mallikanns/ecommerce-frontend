@@ -10,12 +10,14 @@ import { SignupComponent } from './signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TrackOrderComponent } from './track-order/track-order.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     // LoginComponent,
-    SignupComponent
+    SignupComponent,
+    TrackOrderComponent
   ],
   imports: [
     BrowserModule,
