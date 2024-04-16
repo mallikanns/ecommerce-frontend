@@ -8,7 +8,7 @@ import { log } from 'console';
   styleUrl: './analytics.component.scss'
 })
 export class AnalyticsComponent {
-  data: any;
+  data: any = {};
 
   constructor(private adminService: AdminService) {}
 
